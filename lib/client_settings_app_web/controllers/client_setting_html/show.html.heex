@@ -1,0 +1,16 @@
+<.header>
+  Client setting <%= @client_setting.id %>
+  <:subtitle>This is a client_setting record from your database.</:subtitle>
+  <:actions>
+    <.link href={~p"/client_settings/#{@client_setting}/edit"}>
+      <.button>Edit client_setting</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="Time offset"><%= @client_setting.time_offset %></:item>
+  <:item title="Bulk"><%= @client_setting.bulk %></:item>
+</.list>
+
+<.back navigate={~p"/client_settings"}>Back to client_settings</.back>

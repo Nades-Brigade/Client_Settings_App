@@ -1,0 +1,24 @@
+<.header>
+  Listing Client settings
+  <:actions>
+    <.link href={~p"/client_settings/new"}>
+      <.button>New Client setting</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.table id="client_settings" rows={@client_settings} row_click={&JS.navigate(~p"/client_settings/#{&1}")}>
+  <:col :let={client_setting} label="Time offset"><%= client_setting.time_offset %></:col>
+  <:col :let={client_setting} label="Bulk"><%= client_setting.bulk %></:col>
+  <:action :let={client_setting}>
+    <div class="sr-only">
+      <.link navigate={~p"/client_settings/#{client_setting}"}>Show</.link>
+    </div>
+    <.link navigate={~p"/client_settings/#{client_setting}/edit"}>Edit</.link>
+  </:action>
+  <:action :let={client_setting}>
+    <.link href={~p"/client_settings/#{client_setting}"} method="delete" data-confirm="Are you sure?">
+      Delete
+    </.link>
+  </:action>
+</.table>

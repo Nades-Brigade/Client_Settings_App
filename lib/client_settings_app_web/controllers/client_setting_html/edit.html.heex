@@ -1,0 +1,8 @@
+<.header>
+  Edit Client setting <%= @client_setting.id %>
+  <:subtitle>Use this form to manage client_setting records in your database.</:subtitle>
+</.header>
+
+<.client_setting_form changeset={@changeset} action={~p"/client_settings/#{@client_setting}"} />
+
+<.back navigate={~p"/client_settings"}>Back to client_settings</.back>

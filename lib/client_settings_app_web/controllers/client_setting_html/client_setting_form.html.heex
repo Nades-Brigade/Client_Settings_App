@@ -1,0 +1,10 @@
+<.simple_form :let={f} for={@changeset} action={@action}>
+  <.error :if={@changeset.action}>
+    Oops, something went wrong! Please check the errors below.
+  </.error>
+  <.input field={f[:time_offset]} type="number" label="Time offset" />
+  <.input field={f[:bulk]} type="text" label="Bulk" />
+  <:actions>
+    <.button>Save Client setting</.button>
+  </:actions>
+</.simple_form>
