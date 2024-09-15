@@ -4,7 +4,7 @@
 ### Clone the repository:
 The project is hosted on GitHub, clone the repository:
 ```bash
-git clone https://github.com/your-username/client_settings_app.git
+git clone https://github.com/Nades-Brigade/Client_Settings_App.git
 ```
 
 ### Navigate to the project directory:
