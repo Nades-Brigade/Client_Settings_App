@@ -74,7 +74,7 @@ Visit `http://localhost:4000/` in your browser to access the app.
 ## 1. Install Dependencies
 
 ### Install Phoenix dependencies (if not done so already):
-Run the following command to install all necessary for the "Non-Live View":
+Run the following command to install all necessary dependencies for the "Non-Live View":
 ```bash
 mix deps.get
 ```
