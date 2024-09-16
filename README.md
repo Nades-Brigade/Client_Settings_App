@@ -80,15 +80,23 @@ mix deps.get
 ```
 
 ---
-## 2. Navigate to /doc directory
+## 2. Create docs
 
-Once dependencies are, navigate into the /doc folder:
+Once dependencies are completed, create the docs using ex_doc:
+```bash
+mix docs
+```
+
+---
+## 3. Navigate to /doc directory
+
+Then navigate into the /doc folder:
 ```bash
 cd doc
 ```
 
 ---
-## 3. Open the documentation
+## 4. Open the documentation
 
 Open documentation by running the following:
 ```bash
